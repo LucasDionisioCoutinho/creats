@@ -1,0 +1,318 @@
+@charset "UTF-8";
+/*fonte para titulos*/
+@import url('https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&display=swap');
+/*fonte para textos*/
+@import url('https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+/*icones*/
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css);
+
+:root {
+    --cor1: #CFDBFA;
+    --cor2: #A7B1CF;
+    --cor3: #6979A5;
+    --cor4: #182750;
+    --cor5: #021038;
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-titulo: monospace, cursive;
+    --fonte-texto: "Sour Gummy", cursive;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    background-color: #CFDBFA;
+    min-height: 100px;
+    max-width: 800px;
+    margin: auto;
+    
+}
+
+a.externo::after {
+    content: '\00A0\1F517';
+}
+
+header {
+    background-image:linear-gradient(to bottom, var(--cor1), var(--cor5));
+}
+header > h1  {
+    text-align: center;
+    color: white;
+    font-size: 5.5em; 
+    padding-top: 40px;
+    min-height: 100px;
+    max-width: 800px;
+    margin: auto;
+}
+header > p {
+    font-size: 1.5em;
+    font-family: var(--fonte-texto);
+    color:  white;
+    text-align: center;
+    margin: auto;
+    padding-right: 10px;
+    padding-left: 10px;
+    text-shadow:  2px 0px rgba(0, 0, 0, 0.315);
+    max-width: 450px;
+    padding-bottom: 55px;
+}
+ header > h2 {
+    color: white;
+    margin: 0px 0px
+    10px 30px;
+    padding: 10px;
+    border: 2px solid var(--cor1);
+    display: inline-block;
+    border-radius: 30px;
+    background-color: var(--cor2);
+    font-family: var(--fonte-texto);
+    
+ }
+ header > h2 > span {
+    color: var(--cor4);
+ }
+
+nav {
+    background-color: var(--cor2);
+    padding: 10px;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.192);
+    
+}
+
+nav > a {
+    color: var(--cor3);
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: bold;
+    transition-duration: all .5s;
+}
+
+nav > a :hover {
+    background-color: var(--cor3);
+    color: var(--cor5);
+   
+}
+main { 
+    max-width: 1000px;
+    min-width: 100px;
+    background-color: white;
+    margin:  auto;
+    box-shadow:  0px 0px 10px rgba(0, 0, 0, 0.418);;
+    border-radius: 0px 0px 20px 20px;
+    
+}
+article  { 
+    display: flex;
+    align-items: center;
+ 
+}
+article img {
+    max-width: 200px;
+    width: 100%;
+    border-radius: 20px;
+   
+}
+article > p {
+    
+    padding: 10px;
+    font-size: 1.2em;
+    min-width: 100px;
+    max-width: 800px;
+    font-family: var(--fonte-texto);
+    
+}
+
+main strong {
+    color: var(--cor4);
+    font-weight: bold;
+}
+aside {
+    display: block;
+
+}
+aside > h1 {
+    background-color: var(--cor3);
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    font-family: var(--fonte-titulo);
+    background: linear-gradient(to right, var(--cor3), var(--cor1));
+    
+}
+aside > ul {
+    list-style-position: inside;
+    columns: 2;
+    list-style-type: none;
+    padding: 10px;
+    min-width: 100px;
+    max-width: 800px;
+    text-align: center;
+}
+ul > li > img {
+    border-radius: 50px;
+    min-width: 100px;
+    max-width: 800px;
+
+}
+ul > li .descricao-imagem{
+    font-family: var(--fonte-texto); 
+}
+
+h2 {
+    background-color: var(--cor3);
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    font-family: var(--fonte-titulo);
+    background: linear-gradient(to right, var(--cor3), var(--cor1));
+}
+
+.descricao-p {
+    padding: 15px;
+    font-family: var(--fonte-texto);
+}
+
+.descricao-carlos {
+    font-size: 0.8em;
+    max-width: 200px;
+    right: 0;
+    top: 50px;
+    margin-left: 60% ;
+    background-color: var(--cor2);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow:  0px 0px 10px rgba(0, 0, 0, 0.418);;
+}
+
+.chamado {
+    background: linear-gradient(to right, var(--cor3), var(--cor1));
+    max-width: 55%;
+    border-radius: 10px;
+    box-shadow:  0px 0px 10px rgba(0, 0, 0, 0.418);;
+}
+.chamado > h1 {
+    font-family: var(--fonte-titulo);
+    padding: 10px;
+    text-align: center;
+}
+.chamado > p {
+    padding: 10px;
+    font-family: var(--fonte-texto);
+}
+footer {
+    width: 100%;
+    background: linear-gradient(to left, var(--cor3), var(--cor1));
+    margin: 10px 0px 0px 0px;
+}
+#footer_content {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Duas colunas: uma para a esquerda e outra para a direita */
+    align-items: start; /* Alinha itens ao topo da linha */
+    gap: 2rem; /* Espaçamento entre as colunas */
+    margin-bottom: 20px;
+    padding: 3rem 3.5rem;
+}
+#footer_contacts h1 {
+    margin-bottom: 0.75rem;
+    font-family: var(--fonte-titulo);
+}
+
+#footer_contacts p {
+    padding-bottom: 0.75rem;
+    font-family: var(--fonte-texto);
+}
+
+#footer_social_media {
+    display: flex;
+    gap: 2rem;
+    margin-top: 1.5rem;
+    
+}
+
+#footer_social_media .footer-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.5rem;
+    width: 2.5rem;
+    color: var(--cor4);
+    border-radius: 50%;
+    color: white;
+    text-decoration: none;
+}
+
+#instagram {
+    background: linear-gradient( #7f37c9, #ff2992, #ff9807);
+}
+
+#tiktok {
+    background: black;
+}
+
+#whatsapp {
+    background-color: #25d366;
+}
+
+#footer-email {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    min-width: 100px;
+    max-width: 800px;
+}
+    
+
+#footer-email p {
+    font-family: var(--fonte-texto);
+    min-width: 100px;
+    max-width: 800px;
+}
+
+#input-grupo {
+    display: flex;
+    align-items: center;
+    background-color: var(--cor3);
+    border-radius: 4px; 
+    min-width: 70px;
+    max-width: 800px;
+    
+}
+
+#input-grupo input {
+    all: unset;
+    padding: 0.75rem;
+    width: 100%;
+    min-width: 4px;
+    max-width: 800px;
+    
+}
+
+#input-grupo button {
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 1.25rem;
+    font-size: 1.125rem;
+    height: 100%;
+    border-radius: 0px 4px 4px 0px;
+    cursor: pointer;
+    min-width: 50px;
+    max-width: 800px;
+    
+
+}
+
+#footer_copyright {
+    display: flex;
+    justify-content: center;
+    background-color: var(--cor5);
+    font-size: 1.1rem;
+    padding: 1.2rem;
+    font-weight: 100;
+    color: white;
+    font-family: var(--fonte-texto);
+}
