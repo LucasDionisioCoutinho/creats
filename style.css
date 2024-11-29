@@ -7,11 +7,18 @@
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css);
 
 :root {
-    --cor1: #CFDBFA;
+    /*--cor1: #CFDBFA;
     --cor2: #A7B1CF;
     --cor3: #6979A5;
     --cor4: #182750;
-    --cor5: #021038;
+    --cor5: #021038;*/
+    --cor1: #f5ebfa;
+    --cor2: #E7DBEF;
+    --cor3: #A56ABD;
+    --cor4: #6E3482;
+    --cor5: #49225B;
+    
+
     --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
     --fonte-titulo: monospace, cursive;
     --fonte-texto: "Sour Gummy", cursive;
